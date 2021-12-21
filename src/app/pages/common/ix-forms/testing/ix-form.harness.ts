@@ -7,6 +7,7 @@ import { IxInputHarness } from 'app/pages/common/ix-forms/components/ix-input/ix
 import { IxSelectHarness } from 'app/pages/common/ix-forms/components/ix-select/ix-select.harness';
 import { IxTextareaHarness } from 'app/pages/common/ix-forms/components/ix-textarea/ix-textarea.harness';
 import { IxFormControlHarness } from 'app/pages/common/ix-forms/interfaces/ix-form-control-harness.interface';
+import { IxJiraOauthHarness } from '../components/ix-jira-oauth/ix-jira-oauth.harness';
 
 const childSelectors = [
   IxInputHarness,
@@ -16,6 +17,7 @@ const childSelectors = [
   IxComboboxHarness,
   IxChipsHarness,
   IxExplorerHarness,
+  IxJiraOauthHarness,
 ] as const;
 
 type SupportedFormControlHarness = InstanceType<(typeof childSelectors)[number]>;

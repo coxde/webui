@@ -17,4 +17,5 @@ export type ApiEventDirectory = {
   'truecommand.config': { response: TrueCommandConfig };
   'vm.query': { response: VirtualMachine };
   'zfs.pool.scan': { response: ResilverData };
+  'support.attach_ticket': { response: Job };
 };

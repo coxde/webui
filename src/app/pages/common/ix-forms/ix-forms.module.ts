@@ -23,6 +23,7 @@ import { IxUserComboboxComponent } from 'app/pages/common/ix-forms/components/ix
 import { IxFormatterService } from 'app/pages/common/ix-forms/services/ix-formatter.service';
 import IxValidatorsService from 'app/pages/common/ix-forms/services/ix-validators.service';
 import { EnclosureModule } from 'app/pages/system/view-enclosure/enclosure.module';
+import { IxJiraOauthComponent } from './components/ix-jira-oauth/ix-jira-oauth.component';
 import { IxModalHeaderComponent } from './components/ix-slide-in/components/ix-modal-header/ix-modal-header.component';
 
 @NgModule({
@@ -53,6 +54,7 @@ import { IxModalHeaderComponent } from './components/ix-slide-in/components/ix-m
     IxChipsComponent,
     IxExplorerComponent,
     IxFileInputComponent,
+    IxJiraOauthComponent,
   ],
   exports: [
     IxErrorsComponent,
@@ -68,6 +70,7 @@ import { IxModalHeaderComponent } from './components/ix-slide-in/components/ix-m
     IxChipsComponent,
     IxExplorerComponent,
     IxFileInputComponent,
+    IxJiraOauthComponent,
   ],
   providers: [
     IxFormatterService,

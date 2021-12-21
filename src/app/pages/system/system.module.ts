@@ -42,6 +42,7 @@ import { FailoverComponent } from './failover/failover.component';
 import { GeneralSettingsComponent } from './general-settings/general-settings.component';
 import { GuiFormComponent } from './general-settings/gui-form/gui-form.component';
 import { EulaComponent } from './general-settings/support/eula/eula.component';
+import { FileTicketFormComponent } from './general-settings/support/file-ticket-form/file-ticket-form.component';
 import { LicenseComponent } from './general-settings/support/license/license.component';
 import { ProactiveComponent } from './general-settings/support/proactive/proactive.component';
 import { SupportFormLicensedComponent } from './general-settings/support/support-licensed/support-form-licensed.component';
@@ -88,6 +89,7 @@ import { EnclosureModule } from './view-enclosure/enclosure.module';
     ProactiveComponent,
     SupportFormLicensedComponent,
     SupportFormUnlicensedComponent,
+    FileTicketFormComponent,
     SysInfoComponent,
     KmipComponent,
     TwoFactorComponent,
