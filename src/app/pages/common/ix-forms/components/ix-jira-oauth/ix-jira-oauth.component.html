@@ -10,7 +10,6 @@
 
   <div class="outlined input-container" [class.has-reset-button]="shouldShowResetInput()">
     <input
-      #ixInput
       matInput
       [value]="value"
       [placeholder]="placeholder"
@@ -20,7 +19,7 @@
     >
     <span *ngIf="shouldShowResetInput()" class="reset-input">
       <mat-icon
-        [matTooltip]="'Clear the field' | translate"
+        [matTooltip]="'Reset the token' | translate"
         (click)="resetInput()"
         role="img"
         fontSet="mdi-set"
@@ -33,10 +32,10 @@
   <mat-hint *ngIf="hint">{{hint}}</mat-hint>
 
   <button
-    *ngIf="!hasValue()"
     mat-button
     type="button"
     (click)="initSession()"
     class="action-button"
-  >{{ (value ? 'Logged In Jira' : 'Login to Jira') | translate }}</button>
+    [disabled]="hasValue()"
+  >{{ (hasValue() ? 'Logged In Jira' : 'Login to Jira') | translate }}</button>
 </div>

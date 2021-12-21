@@ -1,5 +1,5 @@
 import {
-  Component, ChangeDetectionStrategy, ChangeDetectorRef, ElementRef, Input, ViewChild,
+  Component, ChangeDetectionStrategy, ChangeDetectorRef, Input,
 } from '@angular/core';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
@@ -17,7 +17,6 @@ export class IxJiraOauthComponent implements ControlValueAccessor {
   @Input() required: boolean;
   @Input() tooltip: string;
   @Input() placeholder: string = this.translate.instant('Token is required. Please login to get one!');
-  @ViewChild('ixInput') inputElementRef: ElementRef;
   value = '';
   disabled = false;
   readonly = true;
