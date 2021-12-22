@@ -44,7 +44,7 @@ export class FileTicketFormComponent implements OnInit {
   });
   typeOptions$ = of([
     { label: this.translate.instant('Bug'), value: NewTicketType.Bug },
-    { label: this.translate.instant('Feature'), value: NewTicketType.Feature },
+    { label: this.translate.instant('Suggestion'), value: NewTicketType.Suggestion },
   ]);
   categoryOptions$: Observable<Option[]> = this.getCategories();
   tooltips = {
