@@ -88,7 +88,6 @@ export class FileTicketFormComponent implements OnInit {
     ).subscribe((fileList: FileList) => {
       this.fileList = fileList;
       const exceedLimitFile = fileList && [...fileList].some((file) => file.size >= this.FILE_SIZE_LIMIT_50Mb);
-      console.info('fileList', [...fileList], exceedLimitFile);
       if (exceedLimitFile) {
         this.fileList = null;
         this.form.patchValue({ screenshot: null });
